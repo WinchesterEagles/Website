@@ -16,7 +16,7 @@ const MenuItems = [
   { label: "About us", href: "/about-us" },
   { label: "Adults", href: "/adults" },
   { label: "Juniors", href: "/juniors" },
-  { label: "Leagues", href: "/leagues" },
+  { label: "Teams", href: "/teams" },
   { label: "Important Documents", href: "/important-documents" },
 ];
 
@@ -35,7 +35,13 @@ function HamburgerMenu({
         transform transition-transform duration-500 ease-in-out
         ${isOpen ? "translate-y-0" : "-translate-y-full"}`}
     >
-      <Image src="/images/logo.png" alt="club's logo" width={50} height={50} />
+      <Image
+        src="/images/logo.png"
+        alt="club's logo"
+        width={75}
+        height={75}
+        className="mt-4"
+      />
 
       <div className=" flex flex-row ml-6 mt-4 justify-between  ">
         <ul className="w-1/2 font-bold">
@@ -46,15 +52,14 @@ function HamburgerMenu({
           ))}
         </ul>
         <IoArrowBack
-          className="pr-4 pt-3 text-blue-900 cursor-pointer"
-          size={40}
+          className="pr-4 pt-3 text-blue-900 w-11 h-11"
           onClick={onClose}
         />
       </div>
 
       <div className="flex flex-row w-2/3 ml-6 mt-4 border-t-2 border-amber-500">
-        <SiInstagram size={20} className=" text-blue-900 mr-2 mt-4 " />
-        <FaFacebook size={20} className=" text-blue-900 mr-2 mt-4 " />
+        <SiInstagram size={25} className=" text-blue-900 mt-2 mr-1" />
+        <FaFacebook size={25} className=" text-blue-900  mt-2 ml-1 " />
       </div>
     </div>
   );
@@ -68,15 +73,15 @@ function NavBar() {
         className="mt-4 items-center"
         src="/images/logo.png"
         alt="club's logo"
-        width={100}
-        height={100}
+        width={150}
+        height={150}
       />
 
       <ul className="flex flex-row  items-end  ">
         {MenuItems.map(({ label, href }) => (
           <li
             key={label}
-            className=" px-4 hover:text-blue-900 cursor-pointer text-xl relative group  transform transition-transform duration-200 hover:scale-115"
+            className=" px-4 hover:text-blue-900 cursor-pointer text-2xl relative group  transform transition-transform duration-200 hover:scale-115"
           >
             <a
               className="transition-colors duration-200 group-hover:text-amber-500"
@@ -90,14 +95,8 @@ function NavBar() {
       </ul>
 
       <div className="flex flex-row  mt-4 items-center">
-        <SiInstagram
-          size={30}
-          className=" text-blue-900 pr-2 mt-4 cursor-pointer hover:text-amber-500 transition-colors duration-200 transform hover:scale-115"
-        />
-        <FaFacebook
-          size={25}
-          className=" text-blue-900  mt-4 cursor-pointer hover:text-amber-500 transition-colors duration-200 transform  hover:scale-115"
-        />
+        <SiInstagram className=" w-11 h-11 text-blue-900 pr-2 mt-4 cursor-pointer hover:text-amber-500 transition-colors duration-200 transform hover:scale-115" />
+        <FaFacebook className=" w-11 h-11 text-blue-900  mt-4 cursor-pointer hover:text-amber-500 transition-colors duration-200 transform  hover:scale-115" />
       </div>
     </div>
   );
@@ -107,24 +106,23 @@ export default function header() {
   const [isMenuOpen, setMenuState] = useState(false);
 
   return (
-    // mobile header hides in xl resolution and above
-    // desktop header showa in xl resolution and above
     <div>
+      {/* mobile header hides in xl and above*/}
       <div className=" flex flex-row justify-between items-center mx-2 xl:hidden">
         <GiHamburgerMenu
-          size={20}
+          size={25}
           className=" text-blue-950 cursor-pointer"
           onClick={() => setMenuState(true)}
         />
         <Image
           src="/images/logo.png"
           alt="club's logo"
-          width={50}
-          height={50}
+          width={75}
+          height={75}
         />
         <div className=" flex flex-row w-fit">
-          <SiInstagram size={20} className=" text-blue-900 " />
-          <FaFacebook size={20} className=" text-blue-900 mx-2 " />
+          <SiInstagram size={25} className=" text-blue-900 mr-1  " />
+          <FaFacebook size={25} className=" text-blue-900 ml-1 " />
         </div>
 
         <HamburgerMenu
@@ -133,6 +131,7 @@ export default function header() {
         />
       </div>
 
+      {/* desktop header shows in xl and above*/}
       <div className="hidden xl:flex">
         <NavBar></NavBar>
       </div>
