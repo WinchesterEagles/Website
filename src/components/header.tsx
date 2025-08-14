@@ -31,9 +31,9 @@ function HamburgerMenu({
 }) {
   return (
     <div
-      className={` flex flex-col fixed bottom-0 left-0 right-0 h-screen bg-white z-50
-        transform transition-transform duration-500 ease-in-out
-        ${isOpen ? "translate-y-0" : "-translate-y-full"}`}
+      className={`flex flex-col fixed top-0 left-0 right-0 h-screen bg-white z-50
+    transform transition-transform duration-500 ease-in-out
+    ${isOpen ? "translate-y-0" : "-translate-y-full"}`}
     >
       <Image
         src="/images/logo.png"
@@ -68,9 +68,9 @@ function HamburgerMenu({
 // NavBar on desktop
 function NavBar() {
   return (
-    <div className="flex flex-row justify-between w-5/6 mx-auto 2xl:w-3/4  ">
+    <div className="flex flex-row justify-between w-5/6 mx-auto 2xl:w-3/4 mt-4  ">
       <Image
-        className="mt-4 items-center"
+        className=" items-center"
         src="/images/logo.png"
         alt="club's logo"
         width={150}
@@ -94,9 +94,9 @@ function NavBar() {
         ))}
       </ul>
 
-      <div className="flex flex-row  mt-4 items-center">
-        <SiInstagram className=" w-11 h-11 text-blue-900 pr-2 mt-4 cursor-pointer hover:text-amber-500 transition-colors duration-200 transform hover:scale-115" />
-        <FaFacebook className=" w-11 h-11 text-blue-900  mt-4 cursor-pointer hover:text-amber-500 transition-colors duration-200 transform  hover:scale-115" />
+      <div className="flex flex-row   items-center">
+        <SiInstagram className=" w-11 h-11 text-blue-900 pr-2  cursor-pointer hover:text-amber-500 transition-colors duration-200 transform hover:scale-115" />
+        <FaFacebook className=" w-11 h-11 text-blue-900 cursor-pointer hover:text-amber-500 transition-colors duration-200 transform  hover:scale-115" />
       </div>
     </div>
   );
@@ -108,18 +108,21 @@ export default function header() {
   return (
     <div>
       {/* mobile header hides in xl and above*/}
-      <div className=" flex flex-row justify-between items-center mx-2 xl:hidden">
+      <div className=" flex flex-row justify-between items-center  min-h-[75px] mx-2 xl:hidden">
         <GiHamburgerMenu
           size={25}
           className=" text-blue-950 cursor-pointer"
           onClick={() => setMenuState(true)}
         />
+
         <Image
           src="/images/logo.png"
           alt="club's logo"
           width={75}
           height={75}
+          className="absolute left-1/2 -translate-x-1/2"
         />
+
         <div className=" flex flex-row w-fit">
           <SiInstagram size={25} className=" text-blue-900 mr-1  " />
           <FaFacebook size={25} className=" text-blue-900 ml-1 " />
