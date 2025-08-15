@@ -1,7 +1,11 @@
+/* This is the team "figurone" card usec in the teams pages
+the teams' information are defined in the teams page 
+and figurines are generated through loop */
+
 import { StandardButton } from "./standardButton";
 
 // these are the info about the team
-interface TeamInfo {
+export interface TeamInfo {
   imageUrl: string;
   imageAlt: string;
   title: string;

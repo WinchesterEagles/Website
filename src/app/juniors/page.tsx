@@ -4,14 +4,14 @@ import { Metadata } from "next";
 import { FaDownload } from "react-icons/fa";
 
 export const metadata: Metadata = {
-  title: "adults",
-  description: "Adults' training timetable",
+  title: "juniors",
+  description: "Juniors' training timetable",
 };
 
 /* 
 list the available training sessions here
 they must reflect trainingSession interface in timetableCard.tsx*/
-const openSessions: TrainingSession[] = [
+const under16s: TrainingSession[] = [
   {
     day: "Monday",
     time: "20:00 - 22:00",
@@ -29,7 +29,7 @@ const openSessions: TrainingSession[] = [
   },
 ];
 
-const inviteOnly: TrainingSession[] = [
+const under18s: TrainingSession[] = [
   {
     day: "Monday",
     time: "20:00 - 22:00",
@@ -53,14 +53,14 @@ export default function Adults() {
       <p className="text-center font-semibold text-lg px-2 mb-8">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.
       </p>
-      <div className="flex flex-col xl:flex-row xl:w-5/6  justify-center gap-8 mx-auto">
+      <div className="flex flex-col xl:flex-row xl:w-5/6  justify-center gap-4 xl:gap-8 mx-auto">
         {/*  open sessions */}
         <div className=" flex flex-col xl:w-1/2 mx-auto ">
           <h1 className="mx-2 font-semibold text-xl w-1/2 border-b-2 border-amber-500 mb-4 xl:w-1/3 text-center xl:mt-0 xl:mx-auto">
-            Open Sessions
+            Under 16s
           </h1>
 
-          {openSessions.map((session, index) => (
+          {under16s.map((session, index) => (
             <TimetableCard key={index} session={session} />
           ))}
         </div>
@@ -68,10 +68,10 @@ export default function Adults() {
         {/*  invite only sessions */}
         <div className=" flex flex-col xl:w-1/2 mx-auto">
           <h1 className="mx-2 font-semibold text-xl w-1/2 border-b-2 border-amber-500 mb-4 mt-8 xl:w-1/3 xl:mt-0 text-center xl:mx-auto">
-            Invite Only
+            Under 18s
           </h1>
 
-          {inviteOnly.map((session, index) => (
+          {under18s.map((session, index) => (
             <TimetableCard key={index} session={session} />
           ))}
         </div>

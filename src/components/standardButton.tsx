@@ -1,4 +1,5 @@
-// standard button used throughout the application
+/* standard button used throughout the application 
+text and href defined on call*/
 
 interface settings {
   text: string;

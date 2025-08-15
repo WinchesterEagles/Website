@@ -111,7 +111,7 @@ export default function header() {
       <div className=" flex flex-row justify-between items-center  min-h-[75px] mx-2 xl:hidden">
         <GiHamburgerMenu
           size={25}
-          className=" text-blue-950 cursor-pointer"
+          className=" text-blue-900 cursor-pointer"
           onClick={() => setMenuState(true)}
         />
 

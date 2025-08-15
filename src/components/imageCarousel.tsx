@@ -1,3 +1,6 @@
+/* This is the carousel used throughout the site.
+the array of images is defined on call  */
+
 "use client";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
