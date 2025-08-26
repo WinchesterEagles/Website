@@ -13,7 +13,6 @@ import { FaFacebook } from "react-icons/fa";
 // add new pages here and menus loops will take care of the formatting
 const MenuItems = [
   { label: "Home", href: "/" },
-  { label: "About us", href: "/about-us" },
   { label: "Adults", href: "/adults" },
   { label: "Juniors", href: "/juniors" },
   { label: "Teams", href: "/teams" },

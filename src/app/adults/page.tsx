@@ -27,6 +27,11 @@ const openSessions: TrainingSession[] = [
     time: "20:00 - 22:00",
     location: "Winchester sports and leisure centre",
   },
+  {
+    day: "tuesday",
+    time: "20:00 - 22:00",
+    location: "Winchester sports and leisure centre",
+  },
 ];
 
 const inviteOnly: TrainingSession[] = [
