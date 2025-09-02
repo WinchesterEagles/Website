@@ -11,6 +11,9 @@ export const metadata: Metadata = {
 export default function Teams() {
   return (
     <div className=" flex flex-col mt-12 w-full items-center xl:w-5/6  ">
+      {/* Visually hidden main heading for SEO */}
+      <h1 className="sr-only">Teams</h1>
+
       <p className="text-center font-semibold text-lg px-2 mb-8 xl:w-1/2 xl:mx-auto ">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.
       </p>

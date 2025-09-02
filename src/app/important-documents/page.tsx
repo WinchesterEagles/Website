@@ -10,11 +10,13 @@ export const metadata: Metadata = {
 
 export default function ImportantDocuments() {
   return (
-    <div className="w-full mx-2 mt-12 px-2 xl:w-3/4">
-      {/* Header */}
-      <h2 className="text-xl font-semibold mb-4 text-center">
+    <div className="w-full mx-2 mt-12 px-2 xl:w-3/4 mb-16">
+      {/* Visually hidden main heading for SEO */}
+      <h1 className="sr-only">Important documents</h1>
+
+      <p className="text-xl font-semibold mb-4 text-center">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.
-      </h2>
+      </p>
 
       {/* Documents container */}
       <div className="flex flex-col xl:flex-row flex-wrap xl:gap-4 pt-4">

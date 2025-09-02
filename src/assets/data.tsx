@@ -155,7 +155,26 @@ export const commiteeMembers: commiteeMember[] = [
 // =========== IMPORTANT DOCUMENTS ========== //
 
 export const documents: Document[] = [
-  { url: "/files/test.pdf", title: "test document 1" },
-  { url: "/files/test.pdf", title: "test document 2" },
-  { url: "/files/test.pdf", title: "test document 3" },
+  {
+    url: "/files/WEVC_Safeguarding_Adults_Policy.pdf",
+    title: "Safeguarding Adults Policy",
+  },
+  {
+    url: "/files/WEVC_Safeguarding_and_Protecting_Children_policy.pdf",
+    title: "Safeguarding and Protecting Children Policy",
+  },
+  {
+    url: "/files/WEVC_Safeguarding_club_statement_WEVC_2024.pdf",
+    title: "Safeguarding Club Statement",
+  },
+  {
+    url: "/files/WEVC_Anti-Bullying_Charter.pdf",
+    title: "Anti-Bullying Charter",
+  },
+
+  {
+    url: "/files/WEVC_Privacy_Policy_2025.pdf",
+    title: "Privacy Policy - 2025",
+  },
+  { url: "/files/VE_Code_of_Conduct.pdf", title: "VE Code of Conduct" },
 ];

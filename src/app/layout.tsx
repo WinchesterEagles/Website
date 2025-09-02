@@ -22,11 +22,46 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              name: "Winchester Volleyball Club",
+              url: "https://winchestervolleyball.co.uk",
+              mainEntity: [
+                {
+                  "@type": "WebPage",
+                  name: "Adults",
+                  url: "https://winchestervolleyball.co.uk/adults",
+                },
+                {
+                  "@type": "WebPage",
+                  name: "Juniors",
+                  url: "https://winchestervolleyball.co.uk/juniors",
+                },
+                {
+                  "@type": "WebPage",
+                  name: "Teams",
+                  url: "https://winchestervolleyball.co.uk/teams",
+                },
+                {
+                  "@type": "WebPage",
+                  name: "Contact",
+                  url: "https://winchestervolleyball.co.uk/contact",
+                },
+              ],
+            }),
+          }}
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white flex flex-col min-h-screen`}
       >
         <Header />
-        <main className="flex flex-col items-center  flex-1">{children}</main>
+        <main className="flex flex-col items-center flex-1">{children}</main>
         <Footer />
       </body>
     </html>

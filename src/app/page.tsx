@@ -5,8 +5,8 @@ import { StandardButton } from "components/standardButton";
 import { Suspense } from "react";
 
 export const metadata: Metadata = {
-  title: "home",
-  description: "Winchester Eagles Webiste",
+  title: "Winchester Eagles Volleyball Club",
+  description: "Official website of Winchester Eagles Volleyball Club",
 };
 
 export default function Home() {
@@ -38,9 +38,26 @@ export default function Home() {
           <div className="slider-wrapper w-full mx-auto">
             <ImageCarousel
               slides={[
-                { src: "/images/p1.png", alt: "p1" },
-                { src: "/images/p2.jpeg", alt: "p2" },
-                { src: "/images/p3.jpeg", alt: "p3" },
+                {
+                  src: "/images/hpAdults1.jpg",
+                  alt: "adults playing volleyball",
+                },
+                {
+                  src: "/images/hpAdults2.jpg",
+                  alt: "adults playing volleyball",
+                },
+                {
+                  src: "/images/hpAdults3.jpg",
+                  alt: "adults playing volleyball",
+                },
+                {
+                  src: "/images/hpAdults4.jpg",
+                  alt: "adults playing volleyball",
+                },
+                {
+                  src: "/images/hpAdults5.jpg",
+                  alt: "adults playing volleyball",
+                },
               ]}
             />
           </div>
@@ -78,16 +95,17 @@ export default function Home() {
         </div>
       </div>
       {/* block 3- Teams */}
-      <div className="flex flex-col  text-center items-center w-full px-4 mt-12 mb-8 xl:max-w-[50%] mx-auto">
+      <div className="flex flex-col  text-center items-center w-full px-4 mt-12  xl:max-w-[50%] mx-auto">
         <h1 className="font-bold text-xl w-1/3 mx-auto border-b-2 border-amber-500 mb-4">
           Teams
         </h1>
         <div className="slider-wrapper w-full mx-auto">
           <ImageCarousel
             slides={[
-              { src: "/images/p1.png", alt: "p1" },
-              { src: "/images/p2.jpeg", alt: "p2" },
-              { src: "/images/p3.jpeg", alt: "p3" },
+              { src: "/images/hpTeams1.jpg", alt: " team lineup photo" },
+              { src: "/images/hpTeams2.jpg", alt: " team lineup photo" },
+              { src: "/images/hpTeams3.jpg", alt: " team lineup photo" },
+              { src: "/images/hpTeams4.jpg", alt: " team lineup photo" },
             ]}
           />
         </div>

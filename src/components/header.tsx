@@ -46,7 +46,11 @@ function HamburgerMenu({
       <div className=" flex flex-row ml-6 mt-4 justify-between  ">
         <ul className="w-1/2 font-bold">
           {MenuItems.map(({ label, href }) => (
-            <li key={label} className="py-3 xl:px-6 2xl:px-8">
+            <li
+              key={label}
+              className="py-3 xl:px-6 2xl:px-8 active:scale-95
+            transform transition-transform duration-100"
+            >
               <a href={href}>{label}</a>
             </li>
           ))}
