@@ -16,6 +16,7 @@ const MenuItems = [
   { label: "Adults", href: "/adults" },
   { label: "Juniors", href: "/juniors" },
   { label: "Teams", href: "/teams" },
+  { label: "Commitee", href: "/commitee" },
   { label: "Important Documents", href: "/important-documents" },
 ];
 
@@ -39,7 +40,7 @@ function HamburgerMenu({
         alt="club's logo"
         width={75}
         height={75}
-        className="mt-4"
+        className="mt-4 ml-2"
       />
 
       <div className=" flex flex-row ml-6 mt-4 justify-between  ">
@@ -107,7 +108,7 @@ export default function header() {
   return (
     <div>
       {/* mobile header hides in xl and above*/}
-      <div className=" flex flex-row justify-between items-center  min-h-[75px] mx-2 xl:hidden">
+      <div className=" flex flex-row justify-between items-center mt-1 min-h-[75px] mx-2 xl:hidden">
         <GiHamburgerMenu
           size={25}
           className=" text-blue-900 cursor-pointer"

@@ -1,6 +1,5 @@
-/* This is the team "figurone" card usec in the teams pages
-the teams' information are defined in the teams page 
-and figurines are generated through loop */
+/* This is the team "figurine" card used in the teams pages
+mapping in teams page, generates as many figurines as there are teams */
 
 import { StandardButton } from "./standardButton";
 
@@ -18,7 +17,7 @@ export function TeamCard({ teamInfo }: { teamInfo: TeamInfo }) {
       <img
         src={teamInfo.imageUrl}
         alt={teamInfo.imageAlt}
-        className="mb-2 rounded-lg w-11/12 xl:w-5/6 h-auto"
+        className="mb-2 rounded-lg w-11/12 xl:w-5/6 h-auto mx-auto"
       />
       <p className="text-center font-semibold px-2 pb-2 w-1/2 xl:w-1/3 border-b-2 border-amber-500">
         {teamInfo.title}

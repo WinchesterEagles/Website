@@ -2,55 +2,17 @@ import { TimetableCard } from "components/timetableCard";
 import { TrainingSession } from "components/timetableCard";
 import { Metadata } from "next";
 import { FaDownload } from "react-icons/fa";
+import { under16s, under18s } from "assets/data";
 
 export const metadata: Metadata = {
   title: "juniors",
   description: "Juniors' training timetable",
 };
 
-/* 
-list the available training sessions here
-they must reflect trainingSession interface in timetableCard.tsx*/
-const under16s: TrainingSession[] = [
-  {
-    day: "Monday",
-    time: "20:00 - 22:00",
-    location: "Winchester sports and leisure centre",
-  },
-  {
-    day: "Monday",
-    time: "20:00 - 22:00",
-    location: "Winchester sports and leisure centre",
-  },
-  {
-    day: "Monday",
-    time: "20:00 - 22:00",
-    location: "Winchester sports and leisure centre",
-  },
-];
-
-const under18s: TrainingSession[] = [
-  {
-    day: "Monday",
-    time: "20:00 - 22:00",
-    location: "Winchester sports and leisure centre",
-  },
-  {
-    day: "Monday",
-    time: "20:00 - 22:00",
-    location: "Winchester sports and leisure centre",
-  },
-  {
-    day: "Monday",
-    time: "20:00 - 22:00",
-    location: "Winchester sports and leisure centre",
-  },
-];
-
-export default function Adults() {
+export default function Juniors() {
   return (
-    <div className="flex flex-col mt-8  w-full px-2 mb-16 items-center  mx-auto">
-      <p className="text-center font-semibold text-lg px-2 mb-8">
+    <div className="flex flex-col mt-12  w-full px-2 mb-16 items-center  mx-auto">
+      <p className="text-center font-semibold text-lg px-2 mb-8 xl:w-1/2 xl:mx-auto ">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.
       </p>
       <div className="flex flex-col xl:flex-row xl:w-5/6  justify-center gap-4 xl:gap-8 mx-auto">

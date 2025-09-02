@@ -25,13 +25,10 @@ export default function Home() {
           ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula
           massa, varius a, semper congue, euismod non, mi.
         </p>
-        <div className="mt-4">
-          <StandardButton text="about us" href="about-us" />
-        </div>
       </div>
 
       {/* block 2- Adults + Juniors */}
-      <div className="flex flex-col xl:flex-row gap-8 w-full xl:max-w-5/6 px-4  mb-8">
+      <div className="flex flex-col xl:flex-row gap-8 w-full xl:max-w-5/6 px-4 mt-12  mb-8">
         {/* Adults Section */}
         <div className=" flex flex-1 flex-col text-center items-center xl:max-w-[48%]">
           <h1 className="font-bold text-xl w-1/3 mx-auto border-b-2 border-amber-500 mb-4">
@@ -81,7 +78,7 @@ export default function Home() {
         </div>
       </div>
       {/* block 3- Teams */}
-      <div className="flex flex-col  text-center items-center w-full px-4 mb-8 xl:max-w-[50%] mx-auto">
+      <div className="flex flex-col  text-center items-center w-full px-4 mt-12 mb-8 xl:max-w-[50%] mx-auto">
         <h1 className="font-bold text-xl w-1/3 mx-auto border-b-2 border-amber-500 mb-4">
           Teams
         </h1>

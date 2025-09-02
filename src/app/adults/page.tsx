@@ -2,60 +2,17 @@ import { TimetableCard } from "components/timetableCard";
 import { TrainingSession } from "components/timetableCard";
 import { Metadata } from "next";
 import { FaDownload } from "react-icons/fa";
+import { openSessions, inviteOnly } from "assets/data";
 
 export const metadata: Metadata = {
   title: "adults",
   description: "Adults' training timetable",
 };
 
-/* 
-list the available training sessions here
-they must reflect trainingSession interface in timetableCard.tsx*/
-const openSessions: TrainingSession[] = [
-  {
-    day: "Monday",
-    time: "20:00 - 22:00",
-    location: "Winchester sports and leisure centre",
-  },
-  {
-    day: "Monday",
-    time: "20:00 - 22:00",
-    location: "Winchester sports and leisure centre",
-  },
-  {
-    day: "Monday",
-    time: "20:00 - 22:00",
-    location: "Winchester sports and leisure centre",
-  },
-  {
-    day: "tuesday",
-    time: "20:00 - 22:00",
-    location: "Winchester sports and leisure centre",
-  },
-];
-
-const inviteOnly: TrainingSession[] = [
-  {
-    day: "Monday",
-    time: "20:00 - 22:00",
-    location: "Winchester sports and leisure centre",
-  },
-  {
-    day: "Monday",
-    time: "20:00 - 22:00",
-    location: "Winchester sports and leisure centre",
-  },
-  {
-    day: "Monday",
-    time: "20:00 - 22:00",
-    location: "Winchester sports and leisure centre",
-  },
-];
-
 export default function Adults() {
   return (
-    <div className="flex flex-col mt-8  w-full px-2 mb-16 items-center  mx-auto">
-      <p className="text-center font-semibold text-lg px-2 mb-8">
+    <div className="flex flex-col mt-12 w-full px-2 mb-16 items-center  mx-auto">
+      <p className="text-center font-semibold text-lg px-2 mb-8 xl:w-1/2 xl:mx-auto">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.
       </p>
       <div className="flex flex-col xl:flex-row xl:w-5/6  justify-center gap-8 mx-auto">
