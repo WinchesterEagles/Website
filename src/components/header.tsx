@@ -99,7 +99,7 @@ function NavBar() {
       </ul>
 
       <div className="flex flex-row   items-center">
-        <SiInstagram className=" w-11 h-11 text-blue-900 pr-2  cursor-pointer hover:text-amber-500 transition-colors duration-200 transform hover:scale-115" />
+        <SiInstagram className=" w-11 h-11 text-blue-900 mr-2 cursor-pointer hover:text-amber-500 transition-colors duration-200 transform hover:scale-115" />
         <FaFacebook className=" w-11 h-11 text-blue-900 cursor-pointer hover:text-amber-500 transition-colors duration-200 transform  hover:scale-115" />
       </div>
     </div>
