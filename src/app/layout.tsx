@@ -23,6 +23,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <title>Winchester Eagles Volleyball Club</title>
+        <link rel="icon" href="/favicon.ico" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
