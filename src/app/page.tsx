@@ -7,7 +7,7 @@ import { Suspense } from "react";
 export const metadata: Metadata = {
   title: "Winchester Eagles Volleyball Club",
   description:
-    "Winchester Eagles Volleyball Club - Winchester's home for volleyball. Open to players of all levels. ur teams proudly compete in Hampshire's volleyball leagues..",
+    "Winchester Eagles Volleyball Club - Winchester's home for volleyball. Open to players of all levels. our teams proudly compete in Hampshire's volleyball leagues..",
 };
 
 export default function Home() {
