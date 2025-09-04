@@ -5,7 +5,8 @@ import { teams } from "assets/data";
 
 export const metadata: Metadata = {
   title: "teams",
-  description: "Discover our teams",
+  description:
+    "Discover the Winchester Eagles teams - view team info and follow their progress in the official league tables.",
 };
 
 export default function Teams() {
@@ -14,9 +15,9 @@ export default function Teams() {
       {/* Visually hidden main heading for SEO */}
       <h1 className="sr-only">Teams</h1>
 
-      <p className="text-center font-semibold text-lg px-2 mb-8 xl:w-1/2 xl:mx-auto ">
+      <h2 className="text-center font-semibold text-lg px-2 mb-8 xl:w-1/2 xl:mx-auto ">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.
-      </p>
+      </h2>
 
       <div className=" flex flex-col xl:flex-row xl:flex-wrap xl:w-full mt-4">
         {teams.map((team, index) => (

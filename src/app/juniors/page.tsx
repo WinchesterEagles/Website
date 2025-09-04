@@ -6,7 +6,8 @@ import { under16s, under18s } from "assets/data";
 
 export const metadata: Metadata = {
   title: "juniors",
-  description: "Juniors' training timetable",
+  description:
+    "Join Winchester Eagles junior volleyball - check training times, location, and download our timetable and pricing list",
 };
 
 export default function Juniors() {
@@ -15,15 +16,15 @@ export default function Juniors() {
       {/* Visually hidden main heading for SEO */}
       <h1 className="sr-only">Juniors</h1>
 
-      <p className="text-center font-semibold text-lg px-2 mb-8 xl:w-1/2 xl:mx-auto ">
+      <h2 className="text-center font-semibold text-lg px-2 mb-8 xl:w-1/2 xl:mx-auto ">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.
-      </p>
+      </h2>
       <div className="flex flex-col xl:flex-row xl:w-5/6  justify-center xl:gap-8 mx-auto">
         {/*  Under 16s */}
         <div className=" flex flex-col xl:w-1/2 mx-auto ">
-          <h2 className="mx-2 font-semibold text-xl w-1/2 border-b-2 border-amber-500 mb-4 xl:w-1/3 text-center xl:mt-0 xl:mx-auto">
+          <h3 className="mx-2 font-semibold text-xl w-1/2 border-b-2 border-amber-500 mb-4 xl:w-1/3 text-center xl:mt-0 xl:mx-auto">
             Under 16s
-          </h2>
+          </h3>
 
           {under16s.map((session, index) => (
             <TimetableCard key={index} session={session} />
@@ -32,9 +33,9 @@ export default function Juniors() {
 
         {/*  Under 18s */}
         <div className=" flex flex-col xl:w-1/2 mx-auto">
-          <h2 className="mx-2 font-semibold text-xl w-1/2 border-b-2 border-amber-500 mb-4 mt-8 xl:w-1/3 xl:mt-0 text-center xl:mx-auto">
+          <h3 className="mx-2 font-semibold text-xl w-1/2 border-b-2 border-amber-500 mb-4 mt-8 xl:w-1/3 xl:mt-0 text-center xl:mx-auto">
             Under 18s
-          </h2>
+          </h3>
 
           {under18s.map((session, index) => (
             <TimetableCard key={index} session={session} />

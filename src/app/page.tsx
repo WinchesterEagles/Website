@@ -6,12 +6,14 @@ import { Suspense } from "react";
 
 export const metadata: Metadata = {
   title: "Winchester Eagles Volleyball Club",
-  description: "Official website of Winchester Eagles Volleyball Club",
+  description:
+    "Winchester Eagles Volleyball Club - Winchester's home for volleyball. Open to players of all levels. ur teams proudly compete in Hampshire's volleyball leagues..",
 };
 
 export default function Home() {
   return (
     <div className="flex flex-col items-center w-full mt-8">
+      <h1 className="sr-only"> Winchester EAgles volleyball club</h1>
       {/* block 1- landing image + text */}
       <div className="flex flex-col px-4 text-center mb-8 w-full xl:max-w-5/6">
         <img
@@ -40,23 +42,23 @@ export default function Home() {
               slides={[
                 {
                   src: "/images/hpAdults1.jpg",
-                  alt: "adults playing volleyball",
+                  alt: "adults playing volleyball outdoor",
                 },
                 {
                   src: "/images/hpAdults2.jpg",
-                  alt: "adults playing volleyball",
+                  alt: "adults playing volleyball outdoor",
                 },
                 {
                   src: "/images/hpAdults3.jpg",
-                  alt: "adults playing volleyball",
+                  alt: "adults playing volleyball outdoor",
                 },
                 {
                   src: "/images/hpAdults4.jpg",
-                  alt: "adults playing volleyball",
+                  alt: "adults playing volleyball outdoor",
                 },
                 {
                   src: "/images/hpAdults5.jpg",
-                  alt: "adults playing volleyball",
+                  alt: "adults playing volleyball outdoor",
                 },
               ]}
             />
@@ -72,9 +74,9 @@ export default function Home() {
 
         {/* Juniors Section */}
         <div className="flex flex-1 flex-col text-center items-center xl:max-w-[48%]">
-          <h1 className="font-bold text-xl w-1/3 mx-auto border-b-2 border-amber-500 mb-4">
+          <h2 className="font-bold text-xl w-1/3 mx-auto border-b-2 border-amber-500 mb-4">
             Juniors
-          </h1>
+          </h2>
 
           <div className="slider-wrapper w-full mx-auto">
             <ImageCarousel

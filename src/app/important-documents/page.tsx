@@ -5,7 +5,8 @@ import { documents } from "assets/data";
 
 export const metadata: Metadata = {
   title: "important documents",
-  description: "learn abou walefare information",
+  description:
+    "Access all important Winchester Eagles documents - download timetables, pricing, and other club resources",
 };
 
 export default function ImportantDocuments() {
@@ -14,9 +15,9 @@ export default function ImportantDocuments() {
       {/* Visually hidden main heading for SEO */}
       <h1 className="sr-only">Important documents</h1>
 
-      <p className="text-xl font-semibold mb-4 text-center">
+      <h2 className="text-xl font-semibold mb-4 text-center">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.
-      </p>
+      </h2>
 
       {/* Documents container */}
       <div className="flex flex-col xl:flex-row flex-wrap xl:gap-4 pt-4">
