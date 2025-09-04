@@ -7,6 +7,14 @@ export const metadata: Metadata = {
   title: "teams",
   description:
     "Discover the Winchester Eagles teams - view team info and follow their progress in the official league tables.",
+
+  // Open Graph (social previews)
+  openGraph: {
+    title: "teams",
+    description:
+      "Discover the Winchester Eagles teams - view team info and follow their progress in the official league tables.",
+    url: "https://www.winchestervolleyball.co.uk/commitee",
+  },
 };
 
 export default function Teams() {

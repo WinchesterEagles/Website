@@ -6,6 +6,14 @@ export const metadata: Metadata = {
   title: "commitee",
   description:
     "Meet the Winchester Eagles committee and coaches - learn about the people who run and support our club.",
+
+  // Open Graph (social previews)
+  openGraph: {
+    title: "commitee",
+    description:
+      "Meet the Winchester Eagles committee and coaches - learn about the people who run and support our club.",
+    url: "https://www.winchestervolleyball.co.uk/commitee",
+  },
 };
 
 export default function commitee() {

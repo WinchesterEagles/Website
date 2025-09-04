@@ -4,12 +4,6 @@ import { ImageCarousel } from "components/imageCarousel";
 import { StandardButton } from "components/standardButton";
 import { Suspense } from "react";
 
-export const metadata: Metadata = {
-  title: "Winchester Eagles Volleyball Club",
-  description:
-    "Winchester Eagles Volleyball Club - Winchester's home for volleyball. Open to players of all levels. our teams proudly compete in Hampshire's volleyball leagues..",
-};
-
 export default function Home() {
   return (
     <div className="flex flex-col items-center w-full mt-8">

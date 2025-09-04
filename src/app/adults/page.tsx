@@ -8,6 +8,14 @@ export const metadata: Metadata = {
   title: "adults",
   description:
     "Join Winchester Eagles adult volleyball - check training times, location, and downloadour timetable and pricing list",
+
+  // Open Graph (social previews)
+  openGraph: {
+    title: "adults",
+    description:
+      "Join Winchester Eagles adult volleyball - check training times, location, and downloadour timetable and pricing list",
+    url: "https://www.winchestervolleyball.co.uk/commitee",
+  },
 };
 
 export default function Adults() {

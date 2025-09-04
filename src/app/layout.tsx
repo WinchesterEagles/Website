@@ -5,6 +5,33 @@ import "./globals.css";
 import Header from "components/header";
 import Footer from "components/footer";
 
+export const metadata: Metadata = {
+  title: "Winchester Eagles Volleyball Club",
+  description:
+    "Winchester Eagles Volleyball Club - Winchester's home for volleyball. Open to players of all levels. our teams proudly compete in Hampshire's volleyball leagues..",
+
+  icons: {
+    icon: [
+      { url: "/favicon-32x32.png", sizes: "32x32" },
+      { url: "/favicon-64x64.png", sizes: "64x64" },
+      { url: "/favicon-192x192.png", sizes: "192x192" },
+      { url: "/favicon-512x512.png", sizes: "512x512" },
+    ],
+    apple: "/apple-touch-icon-180x180.png",
+  },
+
+  // Open Graph (social previews)
+  openGraph: {
+    title: "Winchester Eagles Volleyball Club",
+    description:
+      "Winchester Eagles Volleyball Club - Winchester's home for volleyball. Open to players of all levels. our teams proudly compete in Hampshire's volleyball leagues..",
+    url: "https://www.winchestervolleyball.co.uk",
+    siteName: "Winchester Eagles Volleyball Club",
+    images: ["/og-image.png"], // large social preview image
+    type: "website",
+  },
+};
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -23,8 +50,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <title>Winchester Eagles Volleyball Club</title>
-        <link rel="icon" href="/favicon.ico" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

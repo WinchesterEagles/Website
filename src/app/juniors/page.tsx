@@ -8,6 +8,14 @@ export const metadata: Metadata = {
   title: "juniors",
   description:
     "Join Winchester Eagles junior volleyball - check training times, location, and download our timetable and pricing list",
+
+  // Open Graph (social previews)
+  openGraph: {
+    title: "juniors",
+    description:
+      "Join Winchester Eagles junior volleyball - check training times, location, and download our timetable and pricing list",
+    url: "https://www.winchestervolleyball.co.uk/commitee",
+  },
 };
 
 export default function Juniors() {

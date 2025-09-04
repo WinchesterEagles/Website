@@ -7,6 +7,14 @@ export const metadata: Metadata = {
   title: "important documents",
   description:
     "Access all important Winchester Eagles documents - download timetables, pricing, and other club resources",
+
+  // Open Graph (social previews)
+  openGraph: {
+    title: "important documents",
+    description:
+      "Access all important Winchester Eagles documents - download timetables, pricing, and other club resources",
+    url: "https://www.winchestervolleyball.co.uk/commitee",
+  },
 };
 
 export default function ImportantDocuments() {
