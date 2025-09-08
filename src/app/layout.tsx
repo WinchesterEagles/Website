@@ -8,7 +8,7 @@ import Footer from "components/footer";
 export const metadata: Metadata = {
   title: "Winchester Eagles Volleyball Club",
   description:
-    "Winchester Eagles Volleyball Club - Winchester's home for volleyball. Open to players of all levels. our teams proudly compete in Hampshire's volleyball leagues..",
+    "Welcome to Winchester Eagles Volleyball club We are a fun and friendly volleyball club located in Winchester. We welcome players of all abilities from beginners to pros.",
 
   icons: {
     icon: [

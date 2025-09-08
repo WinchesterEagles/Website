@@ -51,14 +51,7 @@ export default function Juniors() {
         </div>
       </div>
 
-      <p className="flex flex-row items-center w-full p-2 mt-4 border-b-2 border-amber-500 xl:w-1/4 xl:text-center xl:mx-auto">
-        <span className="flex-grow ">Download full 2025 time table</span>
-        <a href="/files/test.pdf" download>
-          <FaDownload className="mx-2 text-blue-900 w-6 h-6 xl:hover:text-amber-500 cursor-pointer" />
-        </a>
-      </p>
-
-      <p className="flex flex-row items-center w-full p-2 mt-4 border-b-2 border-blue-900 xl:w-1/4 xl:text-center xl:mx-auto">
+      <p className="flex flex-row items-center w-full p-2 mt-6 border-b-2 border-amber-500 xl:w-1/4 xl:text-center xl:mx-auto">
         <span className="flex-grow ">Download full 2025 pricing</span>
         <a href="/files/test.pdf" download>
           <FaDownload className="mx-2 text-blue-900 w-6 h-6 xl:hover:text-amber-500 cursor-pointer" />

@@ -18,37 +18,12 @@ export const openSessions: TrainingSession[] = [
     time: "20:00 - 22:00",
     location: "Winchester sports and leisure centre",
   },
-  {
-    day: "Monday",
-    time: "20:00 - 22:00",
-    location: "Winchester sports and leisure centre",
-  },
-  {
-    day: "Monday",
-    time: "20:00 - 22:00",
-    location: "Winchester sports and leisure centre",
-  },
-  {
-    day: "tuesday",
-    time: "20:00 - 22:00",
-    location: "Winchester sports and leisure centre",
-  },
 ];
 
 // Invite Only
 export const inviteOnly: TrainingSession[] = [
   {
-    day: "Monday",
-    time: "20:00 - 22:00",
-    location: "Winchester sports and leisure centre",
-  },
-  {
-    day: "Monday",
-    time: "20:00 - 22:00",
-    location: "Winchester sports and leisure centre",
-  },
-  {
-    day: "Monday",
+    day: "Wednesday",
     time: "20:00 - 22:00",
     location: "Winchester sports and leisure centre",
   },
@@ -98,28 +73,46 @@ export const under18s: TrainingSession[] = [
 
 export const teams: TeamInfo[] = [
   {
-    imageUrl: "/images/p2.jpeg",
-    imageAlt: "team photo",
-    title: "example team",
-    leagueTableUrl: "/",
+    imageUrl: "/images/men_HV.webp",
+    imageAlt: "Men's HV team line-up picture",
+    title: "Men HV",
+    leagueTableUrl:
+      "https://www.volleyballhampshire.org/competitions/men.php?season=2024-2025&div=MB",
   },
   {
-    imageUrl: "/images/p2.jpeg",
-    imageAlt: "team photo",
-    title: "example team",
-    leagueTableUrl: "/",
+    imageUrl: "/images/men_SADVA.webp",
+    imageAlt: "Men's SADVA team line-up picture",
+    title: "Men SADVA",
+    leagueTableUrl:
+      "https://www.sadva-volleyball.org.uk/leagues/tables.php?league=M",
   },
   {
-    imageUrl: "/images/p2.jpeg",
-    imageAlt: "team photo",
-    title: "example team",
-    leagueTableUrl: "/",
+    imageUrl: "/images/women_HV.webp",
+    imageAlt: "Women HV team line-up picture",
+    title: "Women HV",
+    leagueTableUrl:
+      "https://www.volleyballhampshire.org/competitions/ladies.php",
   },
   {
-    imageUrl: "/images/p2.jpeg",
-    imageAlt: "team photo",
-    title: "example team",
-    leagueTableUrl: "/",
+    imageUrl: "/images/women_SADVA.webp",
+    imageAlt: "Women SADVA team line-up picture",
+    title: "Women SADVA",
+    leagueTableUrl:
+      "https://www.sadva-volleyball.org.uk/leagues/tables.php?league=L",
+  },
+  {
+    imageUrl: "/images/mixed_HV.webp",
+    imageAlt: "Mixed SADVA team line-up picture",
+    title: "Mixed HV",
+    leagueTableUrl:
+      "https://www.volleyballhampshire.org/competitions/mixed.php",
+  },
+  {
+    imageUrl: "/images/mixed_SADVA.webp",
+    imageAlt: "Mixed SADVA team line-up picture",
+    title: "Mixed SADVA",
+    leagueTableUrl:
+      "https://www.sadva-volleyball.org.uk/leagues/tables.php?league=X",
   },
 ];
 
@@ -164,17 +157,20 @@ export const documents: Document[] = [
     title: "Safeguarding and Protecting Children Policy",
   },
   {
-    url: "/files/WEVC_Safeguarding_club_statement_WEVC_2024.pdf",
+    url: "/files/WEVC_Safeguarding_club_statement_2024.pdf",
     title: "Safeguarding Club Statement",
   },
   {
     url: "/files/WEVC_Anti-Bullying_Charter.pdf",
     title: "Anti-Bullying Charter",
   },
-
   {
     url: "/files/WEVC_Privacy_Policy_2025.pdf",
     title: "Privacy Policy - 2025",
   },
   { url: "/files/VE_Code_of_Conduct.pdf", title: "VE Code of Conduct" },
+  {
+    url: "/files/WEVC_Membership_Fees_2025.pdf",
+    title: "Membership Fees - 2025",
+  },
 ];

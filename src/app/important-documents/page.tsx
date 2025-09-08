@@ -23,12 +23,12 @@ export default function ImportantDocuments() {
       {/* Visually hidden main heading for SEO */}
       <h1 className="sr-only">Important documents</h1>
 
-      <h2 className="text-xl font-semibold mb-4 text-center">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.
+      <h2 className="text-xl  mb-4 text-center">
+        Below you will find links to our clubs policies and documents.
       </h2>
 
       {/* Documents container */}
-      <div className="flex flex-col xl:flex-row flex-wrap xl:gap-4 pt-4">
+      <div className="flex flex-col xl:flex-row flex-wrap xl:gap-4 pt-4 justify-center">
         {documents.map((document, index) => (
           <ImportantDocCard key={index} document={document} />
         ))}

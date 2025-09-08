@@ -13,7 +13,8 @@ export function ImportantDocCard({ document }: { document: Document }) {
     >
       <a
         href={document.url}
-        download
+        target="_blank"
+        rel="noopener noreferrer"
         className="flex justify-between items-center w-full px-4 py-2 group "
       >
         <span className="text-start pr-2 font-semibold ">{document.title}</span>
