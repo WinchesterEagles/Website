@@ -7,7 +7,8 @@ If data grows too large they are to be separated into their own files and groupe
 import { TrainingSession } from "components/timetableCard";
 import { TeamInfo } from "components/teamCard";
 import { Document } from "components/importantDocCard";
-import { commiteeMember } from "components/commiteeCard";
+import { CommiteeMember } from "components/commiteeCard";
+import { Photo } from "components/galleryWall";
 
 // =========== ADULTS TRAINING SESSIONS ========== //
 
@@ -118,7 +119,7 @@ export const teams: TeamInfo[] = [
 
 // =========== COMMITEE MEMBERS ========== //
 
-export const commiteeMembers: commiteeMember[] = [
+export const commiteeMembers: CommiteeMember[] = [
   {
     imageUrl: "/images/commiteeMember.jpg",
     imageAlt: "commitee member",
@@ -142,6 +143,71 @@ export const commiteeMembers: commiteeMember[] = [
     imageAlt: "commitee member",
     name: "Jhon Smith",
     role: "Test role",
+  },
+];
+
+// =========== GALLERY IMAGES ========== //
+export const Photos: Photo[] = [
+  {
+    src: "/images/hpAdults7.webp",
+    width: 4000,
+    height: 3000,
+    alt: "Adults playing indoor",
+  },
+  {
+    src: "/images/gallery1.webp",
+    width: 3000,
+    height: 4000,
+    alt: "team line-up photo",
+  },
+  {
+    src: "/images/hpTeams2.webp",
+    width: 1600,
+    height: 1200,
+    alt: "team line-up photo",
+  },
+  {
+    src: "/images/hpAdults8.webp",
+    width: 4000,
+    height: 3000,
+    alt: "Adults playing indoor",
+  },
+
+  {
+    src: "/images/hpTeams3.webp",
+    width: 2048,
+    height: 1536,
+    alt: "team line-up photo",
+  },
+  {
+    src: "/images/hpAdults5.webp",
+    width: 3264,
+    height: 1472,
+    alt: "Adults playing outdoor",
+  },
+  {
+    src: "/images/men_SADVA.webp",
+    width: 1080,
+    height: 698,
+    alt: "SADVA Men team lineup picture",
+  },
+  {
+    src: "/images/hpAdults1.webp",
+    width: 3264,
+    height: 1472,
+    alt: "Adults playing indoor",
+  },
+  {
+    src: "/images/hpTeams1.webp",
+    width: 1080,
+    height: 943,
+    alt: "team line-up photo",
+  },
+  {
+    src: "/images/gallery2.webp",
+    width: 1536,
+    height: 2048,
+    alt: "team line-up photo",
   },
 ];
 

@@ -24,7 +24,7 @@ export default function Adults() {
       {/* Visually hidden main heading for SEO */}
       <h1 className="sr-only">Adults</h1>
 
-      <h2 className="text-center  text-lg px-2 mb-8 xl:w-1/2 xl:mx-auto">
+      <h2 className="text-center  text-xl px-2 mb-8 xl:w-1/2 xl:mx-auto">
         We hold two training sessions per week for the adults. The Monday
         sessions are open recreational sessions for players of all abilities.
         The Wednesday sessions are for experienced players invited by the coach.

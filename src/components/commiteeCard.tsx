@@ -2,7 +2,7 @@
 mapping in teams page, generates as many figurines as there are teams
  */
 
-export interface commiteeMember {
+export interface CommiteeMember {
   imageUrl: string;
   imageAlt: string;
   name: string;
@@ -16,7 +16,7 @@ export function CommiteeCard({
   commiteeMember,
   borderColour,
 }: {
-  commiteeMember: commiteeMember;
+  commiteeMember: CommiteeMember;
   borderColour: string;
 }) {
   return (

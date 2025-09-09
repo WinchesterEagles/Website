@@ -17,6 +17,7 @@ const MenuItems = [
   { label: "Juniors", href: "/juniors" },
   { label: "Teams", href: "/teams" },
   { label: "Commitee", href: "/commitee" },
+  { label: "Gallery", href: "/gallery" },
   { label: "Important Documents", href: "/important-documents" },
 ];
 

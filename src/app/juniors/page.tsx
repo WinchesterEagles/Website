@@ -24,7 +24,7 @@ export default function Juniors() {
       {/* Visually hidden main heading for SEO */}
       <h1 className="sr-only">Juniors</h1>
 
-      <h2 className="text-center font-semibold text-lg px-2 mb-8 xl:w-1/2 xl:mx-auto ">
+      <h2 className="text-center font-semibold text-xl px-2 mb-8 xl:w-1/2 xl:mx-auto ">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.
       </h2>
       <div className="flex flex-col xl:flex-row xl:w-5/6  justify-center xl:gap-8 mx-auto">

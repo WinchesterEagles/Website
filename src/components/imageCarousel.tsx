@@ -30,17 +30,12 @@ export function ImageCarousel({ slides }: { slides: CarouselImage[] }) {
     <div className="slider-container w-full h-full rounded-xl overflow-hidden">
       <Slider {...settings}>
         {slides.map((item, index) => (
-          <div
-            key={index}
-            className={`w-full h-full ${
-              item.src.includes("Teams") ? "aspect-[4/3]" : "aspect-video"
-            }`}
-          >
+          <div key={index} className="w-full aspect-[4/3]">
             <div className="w-full h-full flex justify-center items-center">
               <img
                 src={item.src}
                 alt={item.alt || `slide-${index}`}
-                className="w-auto h-full object-cover rounded-xl"
+                className="w-full h-full object-cover rounded-xl"
               />
             </div>
           </div>
