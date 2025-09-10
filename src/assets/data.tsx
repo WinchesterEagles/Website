@@ -4,16 +4,17 @@ to simply maintenance process for non-techical people.
 If data grows too large they are to be separated into their own files and grouped within index file
 */
 
-import { TrainingSession } from "components/timetableCard";
+import { JuniorTrainingSession } from "components/juniorsTimetableCard";
 import { TeamInfo } from "components/teamCard";
 import { Document } from "components/importantDocCard";
 import { CommiteeMember } from "components/commiteeCard";
 import { Photo } from "components/galleryWall";
+import { AdultTrainingSession } from "components/adultsTimetableCard";
 
 // =========== ADULTS TRAINING SESSIONS ========== //
 
 // Open sessions
-export const openSessions: TrainingSession[] = [
+export const openSessions: AdultTrainingSession[] = [
   {
     day: "Monday",
     time: "20:00 - 22:00",
@@ -22,7 +23,7 @@ export const openSessions: TrainingSession[] = [
 ];
 
 // Invite Only
-export const inviteOnly: TrainingSession[] = [
+export const inviteOnly: AdultTrainingSession[] = [
   {
     day: "Wednesday",
     time: "20:00 - 22:00",
@@ -32,40 +33,26 @@ export const inviteOnly: TrainingSession[] = [
 
 // =========== JUNIORS TRAINING SESSIONS ========== //
 
-// Under 16s
-export const under16s: TrainingSession[] = [
+// Sunday
+export const sundaySessions: JuniorTrainingSession[] = [
   {
-    day: "Monday",
-    time: "20:00 - 22:00",
+    level: "Beginners - All Ages",
+    time: "10:45 - 12:15",
     location: "Winchester sports and leisure centre",
   },
   {
-    day: "Monday",
-    time: "20:00 - 22:00",
+    level: "Boys teams - All ages",
+    time: "09:15 - 10:45",
     location: "Winchester sports and leisure centre",
   },
   {
-    day: "Monday",
-    time: "20:00 - 22:00",
-    location: "Winchester sports and leisure centre",
-  },
-];
-
-// Under 18s
-export const under18s: TrainingSession[] = [
-  {
-    day: "Monday",
-    time: "20:00 - 22:00",
+    level: "Girls team  - U16s",
+    time: "09:15 - 10:45",
     location: "Winchester sports and leisure centre",
   },
   {
-    day: "Monday",
-    time: "20:00 - 22:00",
-    location: "Winchester sports and leisure centre",
-  },
-  {
-    day: "Monday",
-    time: "20:00 - 22:00",
+    level: "Girls team - U18s",
+    time: "10:45 - 12:15",
     location: "Winchester sports and leisure centre",
   },
 ];
@@ -149,10 +136,10 @@ export const commiteeMembers: CommiteeMember[] = [
 // =========== GALLERY IMAGES ========== //
 export const Photos: Photo[] = [
   {
-    src: "/images/hpAdults7.webp",
-    width: 4000,
-    height: 3000,
-    alt: "Adults playing indoor",
+    src: "/images/hpTeams2.webp",
+    width: 1600,
+    height: 1200,
+    alt: "team line-up photo",
   },
   {
     src: "/images/gallery1.webp",
@@ -161,10 +148,10 @@ export const Photos: Photo[] = [
     alt: "team line-up photo",
   },
   {
-    src: "/images/hpTeams2.webp",
-    width: 1600,
-    height: 1200,
-    alt: "team line-up photo",
+    src: "/images/hpAdults7.webp",
+    width: 4000,
+    height: 3000,
+    alt: "Adults playing indoor",
   },
   {
     src: "/images/hpAdults8.webp",
@@ -172,7 +159,6 @@ export const Photos: Photo[] = [
     height: 3000,
     alt: "Adults playing indoor",
   },
-
   {
     src: "/images/hpTeams3.webp",
     width: 2048,
@@ -195,7 +181,7 @@ export const Photos: Photo[] = [
     src: "/images/hpAdults1.webp",
     width: 3264,
     height: 1472,
-    alt: "Adults playing indoor",
+    alt: "Adults playing outdoor",
   },
   {
     src: "/images/hpTeams1.webp",
@@ -203,11 +189,18 @@ export const Photos: Photo[] = [
     height: 943,
     alt: "team line-up photo",
   },
+
   {
     src: "/images/gallery2.webp",
     width: 1536,
     height: 2048,
     alt: "team line-up photo",
+  },
+  {
+    src: "/images/hpAdults4.webp",
+    width: 3264,
+    height: 1472,
+    alt: "Adults playing outdoor",
   },
 ];
 

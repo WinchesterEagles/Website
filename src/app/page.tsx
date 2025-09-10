@@ -9,7 +9,7 @@ export default function Home() {
     <div className="flex flex-col items-center w-full mt-8">
       <h1 className="sr-only"> Winchester EAgles volleyball club</h1>
       {/* block 1- landing image + text */}
-      <div className="flex flex-col px-4 text-center mb-8 w-full xl:max-w-5/6">
+      <div className="flex flex-col px-4 text-center  w-full xl:max-w-5/6">
         <img
           src="/images/p2.jpeg"
           alt="p2"
@@ -18,8 +18,8 @@ export default function Home() {
         <h2 className="mt-4 font-semibold text-2xl">
           Welcome to Winchester Eagles Volleyball club!
         </h2>
-        <p className="px-6 mt-4 text-xl">
-          We are a fun and friendly volleyball club located in Winchester. We
+        <p className="px-4 mt-4 text-xl">
+          We are a fun and friendly volleyball club located in Winchester.We
           welcome players of all abilities from beginners to pros. Check out our
           pages below to find out more information about our adult and junior
           teams.
@@ -27,7 +27,7 @@ export default function Home() {
       </div>
 
       {/* block 2- Adults + Juniors */}
-      <div className="flex flex-col xl:flex-row gap-8 w-full xl:max-w-5/6 px-4 mt-12  mb-8">
+      <div className="flex flex-col xl:flex-row gap-8 w-full xl:max-w-5/6 px-4 mt-12 xl:mt-16  mb-8">
         {/* Adults Section */}
         <div className=" flex flex-1 flex-col text-center items-center xl:max-w-[48%]">
           <h2 className="font-bold text-2xl w-1/3 mx-auto border-b-2 border-amber-500 mb-4">
@@ -73,7 +73,7 @@ export default function Home() {
             />
           </div>
 
-          <p className="px-6 mt-4 text-xl">
+          <p className="px-4 mt-4 text-xl">
             We offer two adult training sessions per week. Check out the adults
             page for information on timings, membership pricing and more!
           </p>
@@ -83,7 +83,7 @@ export default function Home() {
 
         {/* Juniors Section */}
         <div className="flex flex-1 flex-col text-center items-center xl:max-w-[48%]">
-          <h2 className="font-bold text-2xl w-1/3 mx-auto border-b-2 border-amber-500 mb-4">
+          <h2 className="font-bold text-2xl w-1/3 mx-auto border-b-2 mt-4 xl:mt-0 border-amber-500 mb-4">
             Juniors
           </h2>
 
@@ -97,7 +97,7 @@ export default function Home() {
             />
           </div>
 
-          <p className="px-6 mt-4 text-xl">
+          <p className="px-4 mt-4 text-xl">
             We offer training sessions for juniors aged 16-18. Check out the
             Juniors page for information on timings, membership pricing and
             more!
@@ -107,7 +107,7 @@ export default function Home() {
         </div>
       </div>
       {/* block 3- Teams */}
-      <div className="flex flex-col  text-center items-center w-full px-4 mt-12  xl:max-w-[50%] mx-auto">
+      <div className="flex flex-col  text-center items-center w-full px-4 mt-4 xl:mt-8 xl:max-w-[50%] mx-auto mb-16">
         <h2 className="font-bold text-2xl w-1/3 mx-auto border-b-2 border-amber-500 mb-4">
           Teams
         </h2>
@@ -121,7 +121,7 @@ export default function Home() {
             ]}
           />
         </div>
-        <p className="px-6 mt-4 text-xl">
+        <p className="px-4 mt-4 text-xl">
           We run a wide range of teams and enter them into various competitions,
           tournaments, and friendly matches throughout the year. Head to the
           Teams page to learn more and follow their progress throughout the

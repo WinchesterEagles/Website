@@ -1,8 +1,7 @@
-import { TimetableCard } from "components/timetableCard";
-import { TrainingSession } from "components/timetableCard";
 import { Metadata } from "next";
 import { FaDownload } from "react-icons/fa";
 import { openSessions, inviteOnly } from "assets/data";
+import { AdultsTimetableCard } from "components/adultsTimetableCard";
 
 export const metadata: Metadata = {
   title: "adults",
@@ -38,7 +37,7 @@ export default function Adults() {
           </h3>
 
           {openSessions.map((session, index) => (
-            <TimetableCard key={index} session={session} />
+            <AdultsTimetableCard key={index} session={session} />
           ))}
         </div>
 
@@ -49,7 +48,7 @@ export default function Adults() {
           </h3>
 
           {inviteOnly.map((session, index) => (
-            <TimetableCard key={index} session={session} />
+            <AdultsTimetableCard key={index} session={session} />
           ))}
         </div>
       </div>

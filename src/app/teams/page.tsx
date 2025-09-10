@@ -23,7 +23,7 @@ export default function Teams() {
       {/* Visually hidden main heading for SEO */}
       <h1 className="sr-only">Teams</h1>
 
-      <h2 className="text-center  text-lg px-2 mb-8 xl:w-1/2 xl:mx-auto ">
+      <h2 className="text-center  text-lg px-4 mb-8 xl:w-1/2 xl:mx-auto ">
         Our teams compete in the highest regional leagues, including tournaments
         organized by the Southampton and District Volleyball Association (SADVA)
         and Volleyball Hampshire (VH). You can check out the league tables

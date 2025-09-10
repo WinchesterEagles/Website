@@ -20,4 +20,9 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.yarl__container {
+  background-color: rgba(0, 0, 0, 0.8) !important; /* semi-transparent gray */
+  backdrop-filter: blur(10px); /* blur background */
+}
+
 

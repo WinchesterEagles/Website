@@ -45,11 +45,11 @@ function HamburgerMenu({
       />
 
       <div className=" flex flex-row ml-6 mt-4 justify-between  ">
-        <ul className="w-1/2 font-bold">
+        <ul className="w-2/3 font-bold">
           {MenuItems.map(({ label, href }) => (
             <li
               key={label}
-              className="py-3 xl:px-6 2xl:px-8 active:scale-95
+              className="py-3 text-lg  active:scale-95
             transform transition-transform duration-100"
             >
               <a href={href}>{label}</a>
@@ -57,7 +57,7 @@ function HamburgerMenu({
           ))}
         </ul>
         <IoArrowBack
-          className="pr-4 pt-3 text-blue-900 w-11 h-11"
+          className="mr-4 mt-3 text-blue-900 w-8 h-8"
           onClick={onClose}
         />
       </div>

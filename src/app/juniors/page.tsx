@@ -1,8 +1,7 @@
-import { TimetableCard } from "components/timetableCard";
-import { TrainingSession } from "components/timetableCard";
 import { Metadata } from "next";
 import { FaDownload } from "react-icons/fa";
-import { under16s, under18s } from "assets/data";
+import { JuniorsTimetableCard } from "components/juniorsTimetableCard";
+import { sundaySessions } from "assets/data";
 
 export const metadata: Metadata = {
   title: "juniors",
@@ -24,38 +23,36 @@ export default function Juniors() {
       {/* Visually hidden main heading for SEO */}
       <h1 className="sr-only">Juniors</h1>
 
-      <h2 className="text-center font-semibold text-xl px-2 mb-8 xl:w-1/2 xl:mx-auto ">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.
+      <h2 className="text-center  text-xl px-2 mb-8 xl:w-1/2 xl:mx-auto ">
+        We proudly run a Junior sector focused on developing young players (up
+        to 18 years old), building skills, confidence, and a love for the game.
+        Our teams compete in major leagues, such as SADVA and the Volleyball
+        England Grand Prix, giving players the chance to grow and shine on the
+        court. See our training session schedule below.
       </h2>
       <div className="flex flex-col xl:flex-row xl:w-5/6  justify-center xl:gap-8 mx-auto">
-        {/*  Under 16s */}
+        {/*  Sunday sessions */}
         <div className=" flex flex-col xl:w-1/2 mx-auto ">
           <h3 className="mx-2 font-semibold text-xl w-1/2 border-b-2 border-amber-500 mb-4 xl:w-1/3 text-center xl:mt-0 xl:mx-auto">
-            Under 16s
+            Sunday
           </h3>
 
-          {under16s.map((session, index) => (
-            <TimetableCard key={index} session={session} />
-          ))}
-        </div>
-
-        {/*  Under 18s */}
-        <div className=" flex flex-col xl:w-1/2 mx-auto">
-          <h3 className="mx-2 font-semibold text-xl w-1/2 border-b-2 border-amber-500 mb-4 mt-8 xl:w-1/3 xl:mt-0 text-center xl:mx-auto">
-            Under 18s
-          </h3>
-
-          {under18s.map((session, index) => (
-            <TimetableCard key={index} session={session} />
+          {sundaySessions.map((session, index) => (
+            <JuniorsTimetableCard key={index} session={session} />
           ))}
         </div>
       </div>
 
-      <p className="flex flex-row items-center w-full p-2 mt-6 border-b-2 border-amber-500 xl:w-1/4 xl:text-center xl:mx-auto">
-        <span className="flex-grow ">Download full 2025 pricing</span>
-        <a href="/files/test.pdf" download>
-          <FaDownload className="mx-2 text-blue-900 w-6 h-6 xl:hover:text-amber-500 cursor-pointer" />
-        </a>
+      <p className=" w-full p-2 mt-6 text-lg  xl:w-1/4 xl:text-center xl:mx-auto">
+        for more information Contact us at:
+        <span>
+          <a
+            className=" mx-1 mt-2 text-blue-900 cursor-pointer hover:text-amber-500 transition-colors duration-200 transform hover:scale-105"
+            href="mailto:juniorvolleyballwinchester@gmail.com?subject=Contact%20from%20Website&body=Hi%20Eagles%2C%0A"
+          >
+            juniorvolleyballwinchester@gmail.com
+          </a>
+        </span>
       </p>
     </div>
   );
