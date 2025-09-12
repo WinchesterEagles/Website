@@ -63,8 +63,20 @@ function HamburgerMenu({
       </div>
 
       <div className="flex flex-row w-2/3 ml-6 mt-4 border-t-2 border-amber-500">
-        <SiInstagram size={25} className=" text-blue-900 mt-2 mr-1" />
-        <FaFacebook size={25} className=" text-blue-900  mt-2 ml-1 " />
+        <a
+          href="https://www.instagram.com/wincheaglesvolleyball/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <SiInstagram size={25} className=" text-blue-900 mt-2 mr-1" />
+        </a>
+        <a
+          href="https://www.facebook.com/WinchesterVball/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaFacebook size={25} className=" text-blue-900  mt-2 ml-1 " />
+        </a>
       </div>
     </div>
   );
@@ -100,8 +112,20 @@ function NavBar() {
       </ul>
 
       <div className="flex flex-row   items-center">
-        <SiInstagram className=" w-11 h-11 text-blue-900 mr-2 cursor-pointer hover:text-amber-500 transition-colors duration-200 transform hover:scale-115" />
-        <FaFacebook className=" w-11 h-11 text-blue-900 cursor-pointer hover:text-amber-500 transition-colors duration-200 transform  hover:scale-115" />
+        <a
+          href="https://www.instagram.com/wincheaglesvolleyball/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <SiInstagram className="w-11 h-11 text-blue-900 mr-2 cursor-pointer hover:text-amber-500 transition-colors duration-200 transform hover:scale-110" />
+        </a>
+        <a
+          href="https://www.facebook.com/WinchesterVball/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaFacebook className=" w-11 h-11 text-blue-900 cursor-pointer hover:text-amber-500 transition-colors duration-200 transform  hover:scale-115" />
+        </a>
       </div>
     </div>
   );

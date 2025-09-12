@@ -19,7 +19,7 @@ export default function Home() {
           Welcome to Winchester Eagles Volleyball club!
         </h2>
         <p className="px-4 mt-4 text-xl">
-          We are a fun and friendly volleyball club located in Winchester.We
+          We are a fun and friendly volleyball club located in Winchester. We
           welcome players of all abilities from beginners to pros. Check out our
           pages below to find out more information about our adult and junior
           teams.
@@ -98,8 +98,8 @@ export default function Home() {
           </div>
 
           <p className="px-4 mt-4 text-xl">
-            We offer training sessions for juniors aged 16-18. Check out the
-            Juniors page for information on timings, membership pricing and
+            We offer training sessions for juniors up to 18 years old. Check out
+            the Juniors page for information on timings, membership pricing and
             more!
           </p>
 

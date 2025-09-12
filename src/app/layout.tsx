@@ -6,6 +6,7 @@ import Header from "components/header";
 import Footer from "components/footer";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.winchestervolleyball.co.uk"),
   title: "Winchester Eagles Volleyball Club",
   description:
     "Welcome to Winchester Eagles Volleyball club We are a fun and friendly volleyball club located in Winchester. We welcome players of all abilities from beginners to pros.",
