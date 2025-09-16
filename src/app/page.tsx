@@ -11,14 +11,14 @@ export default function Home() {
       {/* block 1- landing image + text */}
       <div className="flex flex-col px-4 text-center  w-full xl:max-w-5/6">
         <img
-          src="/images/p2.jpeg"
+          src="/images/hpMain.jpg"
           alt="p2"
           className="w-full h-auto xl:aspect-[3/1] my-2 rounded-2xl object-cover"
         />
         <h2 className="mt-4 font-semibold text-2xl">
           Welcome to Winchester Eagles Volleyball club!
         </h2>
-        <p className="px-4 mt-4 text-xl">
+        <p className="px-4 mt-4 text-xl ">
           We are a fun and friendly volleyball club located in Winchester. We
           welcome players of all abilities from beginners to pros. Check out our
           pages below to find out more information about our adult and junior
