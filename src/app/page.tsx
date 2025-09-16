@@ -19,10 +19,12 @@ export default function Home() {
           Welcome to Winchester Eagles Volleyball club!
         </h2>
         <p className="px-4 mt-4 text-xl ">
-          We are a fun and friendly volleyball club located in Winchester. We
-          welcome players of all abilities from beginners to pros. Check out our
-          pages below to find out more information about our adult and junior
-          teams.
+          We are a fun and friendly volleyball club located in Winchester.
+        </p>
+        <p className="px-4 mt-2 text-xl ">
+          We welcome players of all abilities from beginners to pros. Check out
+          our pages below to find out more information about our adult and
+          junior teams.
         </p>
       </div>
 

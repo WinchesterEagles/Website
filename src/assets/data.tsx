@@ -197,6 +197,12 @@ export const Photos: Photo[] = [
     alt: "team line-up photo",
   },
   {
+    src: "/images/hpMain.jpg",
+    width: 2000,
+    height: 1500,
+    alt: "team line-up photo",
+  },
+  {
     src: "/images/hpAdults4.webp",
     width: 3264,
     height: 1472,
