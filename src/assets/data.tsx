@@ -61,42 +61,42 @@ export const sundaySessions: JuniorTrainingSession[] = [
 
 export const teams: TeamInfo[] = [
   {
-    imageUrl: "/images/men_HV.webp",
+    imageUrl: "/images/menHV.webp",
     imageAlt: "Men's HV team line-up picture",
     title: "Men HV",
     leagueTableUrl:
       "https://www.volleyballhampshire.org/competitions/men.php?season=2024-2025&div=MB",
   },
   {
-    imageUrl: "/images/men_SADVA.webp",
+    imageUrl: "/images/menSADVA.webp",
     imageAlt: "Men's SADVA team line-up picture",
     title: "Men SADVA",
     leagueTableUrl:
       "https://www.sadva-volleyball.org.uk/leagues/tables.php?league=M",
   },
   {
-    imageUrl: "/images/women_HV.webp",
+    imageUrl: "/images/womenHV.webp",
     imageAlt: "Women HV team line-up picture",
     title: "Women HV",
     leagueTableUrl:
       "https://www.volleyballhampshire.org/competitions/ladies.php",
   },
   {
-    imageUrl: "/images/women_SADVA.webp",
+    imageUrl: "/images/womenSADVA.webp",
     imageAlt: "Women SADVA team line-up picture",
     title: "Women SADVA",
     leagueTableUrl:
       "https://www.sadva-volleyball.org.uk/leagues/tables.php?league=L",
   },
   {
-    imageUrl: "/images/mixed_HV.webp",
+    imageUrl: "/images/mixedHV.webp",
     imageAlt: "Mixed SADVA team line-up picture",
     title: "Mixed HV",
     leagueTableUrl:
       "https://www.volleyballhampshire.org/competitions/mixed.php",
   },
   {
-    imageUrl: "/images/mixed_SADVA.webp",
+    imageUrl: "/images/mixedSADVA.webp",
     imageAlt: "Mixed SADVA team line-up picture",
     title: "Mixed SADVA",
     leagueTableUrl:
