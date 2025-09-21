@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     title: "important documents",
     description:
       "Access all important Winchester Eagles documents - download timetables, pricing, and other club resources",
-    url: "https://www.winchestervolleyball.co.uk/commitee",
+    url: "https://www.winchestervolleyball.co.uk/important-documents",
   },
 };
 

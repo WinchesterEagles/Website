@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     title: "juniors",
     description:
       "Join Winchester Eagles junior volleyball - check training times, location, and download our timetable and pricing list",
-    url: "https://www.winchestervolleyball.co.uk/commitee",
+    url: "https://www.winchestervolleyball.co.uk/juniors",
   },
 };
 
@@ -43,7 +43,7 @@ export default function Juniors() {
         </div>
       </div>
 
-      <p className=" w-full p-2 mt-6 text-lg  xl:w-1/4 xl:text-center xl:mx-auto">
+      <p className=" w-full text-center p-2 mt-6 text-lg  xl:w-1/4  xl:mx-auto">
         for more information Contact us at:
         <span>
           <a

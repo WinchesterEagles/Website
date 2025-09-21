@@ -7,7 +7,7 @@ import { Suspense } from "react";
 export default function Home() {
   return (
     <div className="flex flex-col items-center w-full mt-8">
-      <h1 className="sr-only"> Winchester EAgles volleyball club</h1>
+      <h1 className="sr-only"> Winchester Eagles volleyball club</h1>
       {/* block 1- landing image + text */}
       <div className="flex flex-col px-4 text-center  w-full xl:max-w-5/6">
         <img
@@ -92,9 +92,26 @@ export default function Home() {
           <div className="slider-wrapper w-full mx-auto">
             <ImageCarousel
               slides={[
-                { src: "/images/p1.png", alt: "p1" },
-                { src: "/images/p2.jpeg", alt: "p2" },
-                { src: "/images/p3.jpeg", alt: "p3" },
+                {
+                  src: "/images/hpJuniors1.jpeg",
+                  alt: "juniors playing volleyball indoor",
+                },
+                {
+                  src: "/images/hpJuniors2.jpeg",
+                  alt: "juniors playing volleyball indoor",
+                },
+                {
+                  src: "/images/hpJuniors3.jpeg",
+                  alt: "juniors playing volleyball indoor",
+                },
+                {
+                  src: "/images/hpJuniors4.jpeg",
+                  alt: "juniors playing volleyball indoor",
+                },
+                {
+                  src: "/images/hpJuniors5.jpeg",
+                  alt: "juniors playing volleyball indoor",
+                },
               ]}
             />
           </div>
@@ -120,6 +137,10 @@ export default function Home() {
               { src: "/images/hpTeams2.webp", alt: " team lineup photo" },
               { src: "/images/hpTeams3.webp", alt: " team lineup photo" },
               { src: "/images/hpTeams4.webp", alt: " team lineup photo" },
+              { src: "/images/Beginners.jpeg", alt: " team lineup photo" },
+              { src: "/images/BoysTeam.jpeg", alt: " team lineup photo" },
+              { src: "/images/U16Girls.jpg", alt: " team lineup photo" },
+              { src: "/images/U18Girls.jpg", alt: " team lineup photo" },
             ]}
           />
         </div>

@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     title: "adults",
     description:
       "Join Winchester Eagles adult volleyball - check training times, location, and downloadour timetable and pricing list",
-    url: "https://www.winchestervolleyball.co.uk/commitee",
+    url: "https://www.winchestervolleyball.co.uk/adults",
   },
 };
 
@@ -23,12 +23,25 @@ export default function Adults() {
       {/* Visually hidden main heading for SEO */}
       <h1 className="sr-only">Adults</h1>
 
-      <h2 className="text-center  text-xl px-2 mb-8 xl:w-1/2 xl:mx-auto">
+      <h2 className="text-center  text-xl px-2 mb-6 xl:w-1/2 xl:mx-auto">
         We hold two training sessions per week for the adults. The Monday
         sessions are open recreational sessions for players of all abilities.
         The Wednesday sessions are for experienced players invited by the coach.
         Check below for our membership fees.
       </h2>
+
+      <p className=" w-full text-center  mt-1 mb-4 text-lg  xl:w-1/4 xl:mx-auto">
+        for more information Contact us at:
+        <span>
+          <a
+            className=" mx-1 mt-2 text-blue-900 cursor-pointer hover:text-amber-500 transition-colors duration-200 transform hover:scale-105"
+            href="mailto:winchestereaglessocial@gmail.com?subject=Contact%20from%20Website&body=Hi%20Eagles%2C%0A"
+          >
+            winchestereaglessocial@gmail.com
+          </a>
+        </span>
+      </p>
+
       <div className="flex flex-col xl:flex-row xl:w-5/6  justify-center xl:gap-8 mx-auto">
         {/*  open sessions */}
         <div className=" flex flex-col xl:w-1/2 mx-auto ">

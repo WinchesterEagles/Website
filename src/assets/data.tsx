@@ -154,16 +154,29 @@ export const Photos: Photo[] = [
     alt: "Adults playing indoor",
   },
   {
+    src: "/images/gallery5.jpg",
+    width: 3000,
+    height: 4000,
+    alt: "juniors playing volleyball",
+  },
+  {
     src: "/images/hpAdults8.webp",
     width: 4000,
     height: 3000,
     alt: "Adults playing indoor",
   },
+
   {
     src: "/images/hpTeams3.webp",
     width: 2048,
     height: 1536,
     alt: "team line-up photo",
+  },
+  {
+    src: "/images/gallery3.jpg",
+    width: 3000,
+    height: 4000,
+    alt: "juniors playing volleyball",
   },
   {
     src: "/images/hpAdults5.webp",
@@ -172,7 +185,7 @@ export const Photos: Photo[] = [
     alt: "Adults playing outdoor",
   },
   {
-    src: "/images/men_SADVA.webp",
+    src: "/images/menSADVA.webp",
     width: 1080,
     height: 698,
     alt: "SADVA Men team lineup picture",
@@ -182,6 +195,12 @@ export const Photos: Photo[] = [
     width: 3264,
     height: 1472,
     alt: "Adults playing outdoor",
+  },
+  {
+    src: "/images/gallery4.jpg",
+    width: 3000,
+    height: 4000,
+    alt: "juniors playing volleyball",
   },
   {
     src: "/images/hpTeams1.webp",
