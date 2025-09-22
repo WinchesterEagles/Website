@@ -133,10 +133,10 @@ export default function Home() {
         <div className="slider-wrapper w-full mx-auto">
           <ImageCarousel
             slides={[
-              { src: "/images/hpTeams1.webp", alt: " team lineup photo" },
+              { src: "/images/mixedHV.jpg", alt: " team lineup photo" },
+              { src: "/images/womenSADVA.webp", alt: " team lineup photo" },
+              { src: "/images/hpTeams1.jpg", alt: " team lineup photo" },
               { src: "/images/hpTeams2.webp", alt: " team lineup photo" },
-              { src: "/images/hpTeams3.webp", alt: " team lineup photo" },
-              { src: "/images/hpTeams4.webp", alt: " team lineup photo" },
               { src: "/images/Beginners.jpeg", alt: " team lineup photo" },
               { src: "/images/BoysTeam.jpeg", alt: " team lineup photo" },
               { src: "/images/U16Girls.jpg", alt: " team lineup photo" },

@@ -61,7 +61,7 @@ export const sundaySessions: JuniorTrainingSession[] = [
 
 export const teams: TeamInfo[] = [
   {
-    imageUrl: "/images/menHV.webp",
+    imageUrl: "/images/menHV.jpg",
     imageAlt: "Men's HV team line-up picture",
     title: "Men HV",
     leagueTableUrl:
@@ -89,14 +89,14 @@ export const teams: TeamInfo[] = [
       "https://www.sadva-volleyball.org.uk/leagues/tables.php?league=L",
   },
   {
-    imageUrl: "/images/mixedHV.webp",
-    imageAlt: "Mixed SADVA team line-up picture",
+    imageUrl: "/images/mixedHV.jpg",
+    imageAlt: "Mixed HV team line-up picture",
     title: "Mixed HV",
     leagueTableUrl:
       "https://www.volleyballhampshire.org/competitions/mixed.php",
   },
   {
-    imageUrl: "/images/mixedSADVA.webp",
+    imageUrl: "/images/mixedSADVA.jpg",
     imageAlt: "Mixed SADVA team line-up picture",
     title: "Mixed SADVA",
     leagueTableUrl:
@@ -165,13 +165,6 @@ export const Photos: Photo[] = [
     height: 3000,
     alt: "Adults playing indoor",
   },
-
-  {
-    src: "/images/hpTeams3.webp",
-    width: 2048,
-    height: 1536,
-    alt: "team line-up photo",
-  },
   {
     src: "/images/gallery3.jpg",
     width: 3000,
@@ -203,7 +196,7 @@ export const Photos: Photo[] = [
     alt: "juniors playing volleyball",
   },
   {
-    src: "/images/hpTeams1.webp",
+    src: "/images/hpTeams1.jpg",
     width: 1080,
     height: 943,
     alt: "team line-up photo",
