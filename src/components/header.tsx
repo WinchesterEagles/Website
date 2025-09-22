@@ -154,8 +154,12 @@ export default function header() {
         />
 
         <div className=" flex flex-row w-fit">
-          <SiInstagram size={25} className=" text-blue-900 mr-1  " />
-          <FaFacebook size={25} className=" text-blue-900 ml-1 " />
+          <a href="https://www.instagram.com/wincheaglesvolleyball/">
+            <SiInstagram size={25} className=" text-blue-900 mr-1  " />
+          </a>
+          <a href="https://www.facebook.com/WinchesterVball/">
+            <FaFacebook size={25} className=" text-blue-900 ml-1 " />
+          </a>
         </div>
 
         <HamburgerMenu
