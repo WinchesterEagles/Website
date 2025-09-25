@@ -1,7 +1,8 @@
 import { Metadata } from "next";
 import { FaDownload } from "react-icons/fa";
-import { openSessions, inviteOnly } from "assets/data";
+import { openSessions, inviteOnly, howToAdultsPage } from "assets/data";
 import { AdultsTimetableCard } from "components/adultsTimetableCard";
+import { HowToWindow } from "components/HowToCard";
 
 export const metadata: Metadata = {
   title: "adults",
@@ -29,6 +30,10 @@ export default function Adults() {
         The Wednesday sessions are for experienced players invited by the coach.
         Check below for our membership fees.
       </h2>
+
+      <div className="mb-6">
+        <HowToWindow howToCard={howToAdultsPage} />
+      </div>
 
       <p className=" w-full text-center  mt-1 mb-4 text-lg  xl:w-1/4 xl:mx-auto">
         for more information Contact us at:

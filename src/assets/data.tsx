@@ -10,6 +10,7 @@ import { Document } from "components/importantDocCard";
 import { CommiteeMember } from "components/commiteeCard";
 import { Photo } from "components/galleryWall";
 import { AdultTrainingSession } from "components/adultsTimetableCard";
+import { HowToCard } from "components/HowToCard";
 
 // =========== ADULTS TRAINING SESSIONS ========== //
 
@@ -251,3 +252,16 @@ export const documents: Document[] = [
     title: "Membership Fees - 2025",
   },
 ];
+
+// =========== HOW TO TUTORIALS========== //
+
+//  How to join us (Adults Page)
+export const howToAdultsPage: HowToCard = {
+  pagePrompt: "How do I join the Club?",
+  tutorialSteps: [
+    "Step 1: Download the sport management app Spond, and sign in.",
+    "Step 2: Request to Join the Winchester Eagles community using the code: XAVGO.",
+    "Step 3: Log you attendance on the Recreational Sessions on Mondays.",
+    "Step 4: The first session is free. For any additional sessions, please consult our membership fee document below.",
+  ],
+};
