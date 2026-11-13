@@ -4,7 +4,6 @@ mapping in teams page, generates as many figurines as there are teams */
 import { StandardButton } from "./standardButton";
 import Image from "next/image";
 
-// these are the info about the team
 export interface TeamInfo {
   imageUrl: string;
   imageAlt: string;
@@ -19,23 +18,34 @@ export function TeamCard({
   teamInfo: TeamInfo;
   borderColour: string;
 }) {
+  // Check if the border is orange/amber, and make the text the OPPOSITE color
+  const isOrangeBorder =
+    borderColour.includes("amber") || borderColour.includes("orange");
+  const textColorClass = isOrangeBorder
+    ? "text-[var(--primary-blue)]"
+    : "text-[var(--primary-orange)]";
+
   return (
-    <div className="flex flex-col w-full items-center mb-16 xl:max-w-[48%]  ">
-      <div className="w-5/6  mb-2 xl:mx-auto min-h-72 aspect-[4/3]  relative ">
+    <div className="flex flex-col items-center bg-[var(--bg-card)] border border-slate-200 rounded-2xl p-5 shadow-sm hover:shadow-md transition-shadow w-full">
+      {/* Team Image Container */}
+      <div className="w-full aspect-[4/3] relative rounded-xl overflow-hidden mb-4 bg-slate-100">
         <Image
           src={teamInfo.imageUrl}
           alt={teamInfo.imageAlt}
           fill
-          className="mb-2 rounded-lg"
+          className="object-cover"
         />
       </div>
 
-      <p
-        className={`text-center text-lg font-semibold mt-2 px-2 pb-2 w-1/2 xl:w-1/3 border-b-2 border-amber-500 ${borderColour}`}
+      {/* Team Title with Opposite Text Color to Border */}
+      <h3
+        className={`text-center text-base sm:text-lg font-extrabold pb-1.5 border-b-2 px-4 ${textColorClass} ${borderColour}`}
       >
         {teamInfo.title}
-      </p>
-      <StandardButton text="League's Table" href={teamInfo.leagueTableUrl} />
+      </h3>
+
+      {/* League Table Button */}
+      <StandardButton text="League Table" href={teamInfo.leagueTableUrl} />
     </div>
   );
 }

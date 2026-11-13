@@ -1,16 +1,13 @@
 import { ImportantDocCard } from "components/importantDocCard";
-import { Document } from "components/importantDocCard";
 import { Metadata } from "next";
 import { documents } from "assets/data";
 
 export const metadata: Metadata = {
-  title: "important documents",
+  title: "Important Documents | Winchester Eagles Volleyball Club",
   description:
     "Access all important Winchester Eagles documents - download timetables, pricing, and other club resources",
-
-  // Open Graph (social previews)
   openGraph: {
-    title: "important documents",
+    title: "Important Documents | Winchester Eagles Volleyball Club",
     description:
       "Access all important Winchester Eagles documents - download timetables, pricing, and other club resources",
     url: "https://www.winchestervolleyball.co.uk/important-documents",
@@ -19,20 +16,32 @@ export const metadata: Metadata = {
 
 export default function ImportantDocuments() {
   return (
-    <div className="w-full mx-2 mt-12 px-2 xl:w-3/4 mb-16">
-      {/* Visually hidden main heading for SEO */}
-      <h1 className="sr-only">Important documents</h1>
+    <main className="min-h-screen bg-[var(--bg-main)] text-[var(--text-main)] py-10 pb-20">
+      <div className="max-w-5xl mx-auto px-4 space-y-10">
+        {/* Visually hidden main heading for SEO */}
+        <h1 className="sr-only">Important Documents</h1>
 
-      <h2 className="text-xl  mb-4 text-center">
-        Below you will find links to our clubs policies and documents.
-      </h2>
+        {/* Header Intro */}
+        <div className="text-center max-w-2xl mx-auto">
+          <span className="inline-block px-3 py-1 text-xs font-bold uppercase tracking-wider text-[var(--text-on-brand)] bg-[var(--primary-orange)] rounded-full mb-3">
+            Club Resources
+          </span>
+          <h2 className="text-3xl sm:text-4xl font-black text-[var(--primary-blue)] mb-4">
+            Important Documents & Policies
+          </h2>
+          <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
+            Below you will find links to our club's policies, member timetables,
+            and official club documents. Click any item to download.
+          </p>
+        </div>
 
-      {/* Documents container */}
-      <div className="flex flex-col xl:flex-row flex-wrap xl:gap-4 pt-4 justify-center">
-        {documents.map((document, index) => (
-          <ImportantDocCard key={index} document={document} />
-        ))}
+        {/* Documents Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-3xl mx-auto">
+          {documents.map((document, index) => (
+            <ImportantDocCard key={index} document={document} />
+          ))}
+        </div>
       </div>
-    </div>
+    </main>
   );
 }

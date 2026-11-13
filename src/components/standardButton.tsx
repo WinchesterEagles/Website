@@ -6,12 +6,16 @@ import Link from "next/link";
 interface settings {
   text: string;
   href: string;
+  className?: string;
 }
 
-// if redirects to iternal page opens in same tab
-// if redirects to external site opens in a new tab
-export function StandardButton({ text, href }: settings) {
+export function StandardButton({ text, href, className }: settings) {
   const isExternal = href.startsWith("http://") || href.startsWith("https://");
+
+  const defaultStyles =
+    "mt-5 py-2.5 px-6 rounded-xl text-xs sm:text-sm font-bold bg-[var(--primary-blue)] text-white hover:bg-[var(--primary-orange)] inline-flex items-center justify-center text-center cursor-pointer shadow-md active:scale-95 transition-all duration-200 whitespace-nowrap";
+
+  const finalClassName = className || defaultStyles;
 
   if (isExternal) {
     return (
@@ -19,23 +23,16 @@ export function StandardButton({ text, href }: settings) {
         href={href}
         target="_blank"
         rel="noopener noreferrer"
-        className="mt-6 py-2 px-3 rounded-lg font-semibold bg-blue-900 w-fit mx-auto text-white cursor-pointer hover:bg-amber-500 
-        shadow-lg active:scale-95 active:shadow-md active:bg-amber-500 active:opacity-90
-        transform transition-transform duration-100 xl:duration-200 hover:scale-105"
+        className={finalClassName}
       >
-        {text}
+        <span className="text-white font-bold">{text}</span>
       </a>
     );
   }
 
   return (
-    <Link
-      href={href}
-      className="mt-6 py-2 px-3 rounded-lg font-semibold bg-blue-900 w-fit mx-auto text-white cursor-pointer hover:bg-amber-500 
-      shadow-lg active:scale-95 active:shadow-md active:bg-amber-500 active:opacity-90
-      transform transition-transform duration-100 xl:duration-200 hover:scale-105"
-    >
-      {text}
+    <Link href={href} className={finalClassName}>
+      <span className="text-white font-bold">{text}</span>
     </Link>
   );
 }

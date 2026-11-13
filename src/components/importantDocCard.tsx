@@ -7,18 +7,19 @@ export interface Document {
 
 export function ImportantDocCard({ document }: { document: Document }) {
   return (
-    <div
-      className="flex w-full rounded-lg shadow-lg border-2 border-blue-900 items-center xl:w-[48%] mb-4  cursor-pointer hover:bg-amber-500 transform transition-transform duration-200 hover:scale-103
-    active:scale-95 active:shadow-md active:bg-amber-500 active:opacity-90  "
-    >
+    <div className="w-full bg-[var(--bg-card)] border-2 border-[var(--primary-blue)] rounded-2xl shadow-sm hover:shadow-md transition-all duration-200 overflow-hidden group">
       <a
         href={document.url}
         download
-        className="flex justify-between items-center w-full px-4 py-2 group "
+        className="flex items-center justify-between p-5 w-full cursor-pointer hover:bg-amber-50 active:scale-[0.99] transition-colors"
       >
-        <span className="text-start pr-2 font-semibold ">{document.title}</span>
+        <span className="text-sm sm:text-base font-bold text-[var(--primary-blue)] pr-3 group-hover:text-[var(--primary-orange)] transition-colors">
+          {document.title}
+        </span>
 
-        <FaDownload className="text-amber-500 group-hover:text-blue-900 group-active:text-blue-900 " />
+        <div className="w-10 h-10 rounded-xl bg-blue-50 group-hover:bg-[var(--primary-orange)] flex items-center justify-center flex-shrink-0 transition-colors">
+          <FaDownload className="w-4 h-4 text-[var(--primary-orange)] group-hover:text-white group-hover:bg-[var(--primary-blue) transition-colors" />
+        </div>
       </a>
     </div>
   );

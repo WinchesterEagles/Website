@@ -1,9 +1,20 @@
 @import "tailwindcss";
 
 :root {
-  color-scheme: light;
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Brand Palette (Extracted from logo) */
+  --primary-blue: #0A3894;       /* Eagle Blue */
+  --primary-orange: #FF8A00;     /* Beak & Volleyball Accent */
+  --blue-hover: #072B75;
+  --orange-hover: #E07800;
+
+  /* Neutral Backgrounds & Text */
+  --bg-main: #FFFFFF;            /* Clean white background */
+  --bg-card: #F8FAFC;            /* Subtle off-white for cards/sections */
+  --bg-muted: #E2E8F0;           /* Borders & dividers */
+  
+  --text-main: #0F172A;          /* Near-black for crisp, high-contrast readability */
+  --text-muted: #64748B;        /* Subtitles & meta info */
+  --text-on-brand: #FFFFFF;      /* White text for blue/orange buttons */
 }
 
 @theme inline {
@@ -15,15 +26,53 @@
 
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-main);
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Utility Design Tokens */
+a {
+  color: var(--primary-blue);
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.btn-primary {
+  background-color: var(--primary-orange);
+  color: var(--text-on-brand);
+  font-weight: 700;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius-md);
+  transition: background-color 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--orange-hover);
+}
+
+.btn-secondary {
+  background-color: var(--primary-blue);
+  color: var(--text-on-brand);
+  font-weight: 700;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius-md);
+  transition: background-color 0.2s ease;
+}
+
+.btn-secondary:hover {
+  background-color: var(--blue-hover);
 }
 
 .yarl__container {
   background-color: rgba(0, 0, 0, 0.8) !important; /* semi-transparent gray */
   backdrop-filter: blur(10px); /* blur background */
 }
-
-
-
